@@ -1,0 +1,8 @@
+<div class="recent">
+  <h3>Subscribe Blog</h3>
+    <%= form_for :subscriber, url: subscribers_path do |f|%>
+      <span><label for="email">Email</label></span>
+        <%= f.text_field :email, class: 'form_control'%>
+        <%= f.submit "Submit"%>
+    <%end%>
+</div>
